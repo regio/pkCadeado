@@ -4,5 +4,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Kdeado Manager</string>
+    <string name="site_text">Site Name</string>
+    <string name="phrase_text">Phrase</string>
+    <string name="button">Generate</string>
+    <string name="pass_text">pass</string>
 
 </resources>

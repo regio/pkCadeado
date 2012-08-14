@@ -4,12 +4,63 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/txvSite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/site_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvSite"
+        android:layout_below="@+id/txvSite"
+        android:ems="10" android:inputType="textAutoComplete">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txvPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtSite"
+        android:layout_below="@+id/edtSite"
+        android:layout_marginTop="20dp"
+        android:text="@string/phrase_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvPhrase"
+        android:layout_below="@+id/txvPhrase"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="come crawling faster obey your master" />
+
+    <Button
+        android:id="@+id/btnGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+        android:layout_toRightOf="@+id/txvSite"
+        android:text="@string/button" />
+
+    <TextView
+        android:id="@+id/txvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGen"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/txvSite"
+        android:text="@string/pass_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
